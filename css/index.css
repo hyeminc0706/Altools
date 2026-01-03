@@ -80,7 +80,7 @@ header .dropdown-group:nth-of-type(2){
 header .dropdown-group:nth-of-type(3){
   grid-column: 2;
   grid-row: 1 /  span 2;
-  padding-top: 204px;
+  padding-top: 189px;
 }
 
 header .dropdown-title {
@@ -123,7 +123,7 @@ header .dropdown-item img {
   background: #f8f8f8;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   flex-shrink: 0;
-  margin-right: 0;
+  margin-right: 15px;
 }
 /* span 제거: 텍스트는 a 내부에 바로 위치 */
 /* ===================== GNB 드롭다운(알툴즈 다운로드) 3컬럼 카테고리별 세로정렬 ===================== */
@@ -253,649 +253,6 @@ footer .footer-download-item span {
 footer .footer-download-item:hover {
   color: #08f;
 }
-/* 이미지가 깨진 경우 해당 제품 항목 숨김 */
-header .dropdown-item img:not([src]):not([src*=".svg"]),
-header .dropdown-item img[src=""],
-header .dropdown-item img[src]:not([src*=".png"]):not([src*=".jpg"]):not([src*=".jpeg"]) {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid + strong,
-header .dropdown-item img[src=""] + strong {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
-header .dropdown-item img:invalid {
-  display: none;
-}
 /* ===================== GNB 드롭다운(알툴즈 다운로드) 제품 아이콘+텍스트 그리드 ===================== */
 header .dropdown-menu {
   position: absolute;
@@ -1016,13 +373,6 @@ header .dropdown-menu {
 header .dropdown-col {
   min-width: 180px;
 }
-header .dropdown-title {
-  font-weight: 700;
-  margin-bottom: 18px;
-  font-size: 20px;
-  color: #444;
-  letter-spacing: -1px;
-}
 header .dropdown-col ul {
   list-style: none;
   padding: 0;
@@ -1067,14 +417,14 @@ header .dropdown-pack {
   border-radius: 16px;
   padding: 18px 0 18px 0;
   width: 100%;
-  height: 56px
+  height: 56px;
   max-width: 700px;
   text-align: center;
   text-decoration: none;
   box-shadow: 0 2px 12px rgba(255,94,138,0.08);
   margin: 0 auto;
   letter-spacing: -1px;
-  transition: background 0.2s;
+  transition: 0.2s;
 }
 header .dropdown-pack b {
   font-weight: 900;
@@ -1112,9 +462,10 @@ header .dropdown-col {
   min-width: 120px;
 }
 header .dropdown-title {
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 18px;
-  font-size: 15px;
+  font-size: 12px;
+  color: #4e5968;
 }
 header .dropdown-col ul {
   list-style: none;
@@ -1187,10 +538,10 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
 .wnext {
   position: absolute;
   top: 548px;
-  left: 255px;
+  left: 354px;
   z-index: 100;
   display: flex;
-  gap: 8px;
+  gap: 14px;
   align-items: center;
 }
 /* 슬라이드 번호 중앙 정렬 */
@@ -1202,6 +553,7 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
   font-size: 10px;
   color: #222;
   padding-top: 3px;
+  margin-left: 15px;
 }
 .wnext button {
   background: none;
@@ -1212,13 +564,16 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
   cursor: pointer;
   transition: color 0.2s;
 }
+.wnext button:last-of-type{
+  padding-left: 15px
+}
 .wnext button:hover {
   color: #000;
 }
 
 /*상단 영역*/
 header {
-  padding: 0 60px;
+  padding: 0 40px;
 }
 header div.wrap2 {
   max-width: 100%;
@@ -1249,11 +604,10 @@ header div.wrap2 .flex li a {
   will-change: background-color;
   transition: background-color .1s ease 0s;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   font-weight: 700;
   border-radius: 6px;
-  margin: 0px 0px 5px 0px;
 }
 header div.wrap2 .flex li>a::after {
   width: 12px;
@@ -1399,9 +753,9 @@ header div.wrap2 span .login-btn:hover {
 }
 .t2box > img{
   position: absolute;
-  width: 905px !important;
-  right: -200px;
-  top: 50px !important;
+  width: 790px;
+  right: -50px;
+  top: 75px;
   border-radius: 25px;
 }
 /*메인 영역*/
@@ -1418,6 +772,7 @@ section#product div.wrap h2 {
 section#product div.wrap ul {
   justify-content: space-between;
   gap: 12px;
+  display: flex;
 }
 section#product div.wrap ul li {
   width: calc(100% / 8);
@@ -1432,11 +787,12 @@ section#product div.wrap ul li a {
   border-radius: 15px;
   height: 100px;
   line-height: 1.2;
+  padding-left: 22px;
 }
 section#product div.wrap ul li a figure {
   gap: 10px;
   height: 100%;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 section#product div.wrap ul li a figure img {
@@ -1448,19 +804,26 @@ section#product div.wrap ul li a figure figcaption {
 }
 section#product div.wrap ul li a figure figcaption h3 {
   margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -.5px;
 }
 section#product div.wrap ul li a figure figcaption h3::after {
   content:"";
-  width: 6px;
-  height: 6px;
+  width: 4.5px;
+  height: 4.5px;
   display: inline-block;
   border: 2px solid;
-  transform: translateY(-3px) rotate(45deg);
+  transform: translateY(-2px) translateX(4px) rotate(45deg);
   border-left: transparent;
   border-bottom: transparent;
 }
 section#product div.wrap ul li a figure figcaption p {
-  
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: -.5px;
+  color: rgba(26, 26, 26, .5);
 }
 section#service {
   padding: 0 40px;
@@ -1572,7 +935,7 @@ section#business div a::after {
 
 /* 알툴즈 */
 section#altools {
-  max-width: 2560px;
+  max-width: 1400px;
   width: calc(100% - 80px);
   border-radius: 28px;
   display: flex;
@@ -1581,22 +944,23 @@ section#altools {
   flex-direction: row;
   margin: 28px auto 0;
 }
-section#altools div.wrap { 
+section#altools div.wrap {
   flex-direction: column;
   align-items: center;
   gap: 50px;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 120px 0 90px;
 }
 section#altools div.wrap h2 {
   
 }
 section#altools div.wrap ul.list {
-  width: 100%;
   position: relative;
   display: flex;
 }
-
+.slick-initialized .slick-slide > div{
+  margin-bottom: 60px;
+}
 section#altools div.wrap ul.list .slick-prev::before, section#altools div.wrap ul.list .slick-next::before{
   
 }
@@ -1639,10 +1003,9 @@ section#altools div.wrap ul.list .wnext{
 }
 
 section#altools div.wrap ul.list li.m {
-  width: 265px;
   transition: 0.5s;
-  padding: 20px;
   box-sizing: border-box;
+  margin-right: 25px;
 }
 section#altools div.wrap ul.list li.m:hover{
   transform: translateY(-10px)
@@ -1697,37 +1060,40 @@ section#altools div.wrap ul li:nth-child(7) a::before{
 section#altools div.wrap ul li:nth-child(8) a::before{
   background-image: url(../img/altools8.jpg);
 }
-section#altools div.wrap ul li:not(.m1) a h3::before{
+section#altools div.wrap ul li a h3::before{
   content:"";
   display: inline-block;
   width: 44px;
   height: 44px;
-  background-image: url(../img/icon2.png);
   background-size: contain;
   background-position: center;
   vertical-align: -15px;
   margin-right: 10px;
 }
+section#altools div.wrap ul li.m1 a h3::before{
+  background-image: url(../img/icon_120_comb.png);
+
+}
 section#altools div.wrap ul li.m2 a h3::before{
   background-image: url(../img/icon3.png);
 }
 section#altools div.wrap ul li.m3 a h3::before{
-  background-image: url(../img/icon4.png);
+  background-image: url(../img/icon_120_alyac.png);
 }
 section#altools div.wrap ul li.m4 a h3::before{
-  background-image: url(../img/icon5.png);
+  background-image: url(../img/icon_120_alc.png);
 }
 section#altools div.wrap ul li.m5 a h3::before{
-  background-image: url(../img/icon6.png);
+  background-image: url(../img/icon_120_alcapture.png);
 }
 section#altools div.wrap ul li.m6 a h3::before{
-  background-image: url(../img/icon7.png);
+  background-image: url(../img/icon_120_alpdf.png);
 }
 section#altools div.wrap ul li.m7 a h3::before{
-  background-image: url(../img/icon8.png);
+  background-image: url(../img/icon_120_alsong.png);
 }
 section#altools div.wrap ul li.m8 a h3::before{
-  background-image: url(../img/icon2.png);
+  background-image: url(../img/icon_120_aldrive.png);
 }
 section#altools div.wrap ul.list li.m a p {
   line-height: 1.4;
@@ -1922,8 +1288,8 @@ section#tip div.wrap ul li a {
 section#tip div.wrap ul li a::after{
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 25px;;
+  height: 25px;
   background-color: #000;
   border-radius: 50%;
   position: absolute;
@@ -1931,6 +1297,7 @@ section#tip div.wrap ul li a::after{
   top: 40px;
   background-image: url(../img/arrow.svg);
   background-position: center;
+  background-size: contain;
   transition: 0.5s;
 }
 section#tip div.wrap ul li a:hover::after{
@@ -1941,9 +1308,6 @@ section#tip div.wrap ul li:nth-child(1) a{
   padding-top: 70px;
   background-image: url(../img/tip1.png);
   background-color: #ff5e8a;
-}
-section#tip div.wrap ul li:not(:nth-child(1)) a{
-/*   background-size: 35%; */
 }
 section#tip div.wrap ul li:nth-child(2) a{
    background-image: url(../img/tip2.png);
@@ -2077,6 +1441,7 @@ footer {
  }
  footer div ul.fnb>li h2 {
    margin-bottom: 20px;
+   margin-left: 8px;
  }
  footer div ul.fnb>li ul {
   flex-wrap: wrap;
@@ -2090,17 +1455,18 @@ footer {
  footer div ul.fnb>li ul li a {
   will-change: background-color;
   transition: background-color .1s ease 0s;
-  font-size: 15px;
+  font-size: 14.5px;
   line-height: 1;
   color: #8b95a1;
   border-radius: 4px;
   padding: 8px 10px 8px 0px;
   width: fit-content;
   height: fit-content;
+  padding: 8px 10px;
 }
 footer div ul.fnb>li ul li a:hover {
   background-color: rgba(139,149,161,.1); /* darkgrey 느낌 */
-  padding: 8px 10px; /* 기존 padding + 3px */
+   /* 기존 padding + 3px */
    /* 선택사항: 글자색 반전 */
 }
 footer div ul.fnb2{
@@ -2116,7 +1482,7 @@ footer div ul.fnb2{
    justify-self: right;
  }
 .fnb2 > li > a {
- padding: 10px 10px 10px 0px !important;
+ padding: 10px;
  }
 
  footer div ul.fnb2>li a {
@@ -2125,8 +1491,12 @@ footer div ul.fnb2{
   line-height: 1;
   font-weight: 600;
   color: #8b95a1;
-  padding: 10px 10px 9px;
  }
+footer div ul.fnb2>li a:hover{
+  background-color: rgba(139,149,161,.1); /* darkgrey 느낌 */
+  border-radius: 5px;
+
+}
  footer div ul.sns {
   gap:10px;
   margin-bottom:20px;
