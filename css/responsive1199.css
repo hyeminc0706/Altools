@@ -96,6 +96,7 @@ header .dropdown-item:hover {
 	}
 	section#altools div.wrap h2{
 		font-size: 24px;
+		margin-bottom: 50px;
 	}
 	section#altools div.wrap ul.list {
 		display: flex;
@@ -108,6 +109,7 @@ header .dropdown-item:hover {
 	}
 	section#altools .slick-initialized .slick-slide > div{
 		margin-bottom: 0px;
+		margin-top: 0px;
 	}
 	section#altools div.wrap ul.list li.m {
 		margin-right: 10px;
