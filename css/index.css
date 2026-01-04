@@ -59,16 +59,16 @@ footer .family-site-list a:hover {
   background: #f4f6f8;
   color: #222;
 }
-/* ===================== GNB 드롭다운 4컬럼 그리드 ===================== */
+
+/* ===================== GNB Dropdown 4-column Grid ===================== */
 header .dropdown-section {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);)
-  align-items: ;
+  grid-template-rows: repeat(2, auto);
 }
 header .dropdown-group {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1 / span 2;
   display: flex;
   flex-direction: column;
   margin-right: 30px;
@@ -79,10 +79,8 @@ header .dropdown-group:nth-of-type(2){
 }
 header .dropdown-group:nth-of-type(3){
   grid-column: 2;
-  grid-row: 1 /  span 2;
-  padding-top: 189px;
+  grid-row: 2;
 }
-
 header .dropdown-title {
   font-size: 18px;
   font-weight: 700;
@@ -97,23 +95,39 @@ header .dropdown-grid.grid-4 {
 header .dropdown-grid a::after{
   display: none !important;
 }
+/* Unified dropdown-item styles */
 header .dropdown-item {
   display: flex;
   align-items: center;
-  gap: 16px;
   text-decoration: none;
   color: #222;
-  font-size: 17px;
   font-weight: 500;
   border-radius: 14px;
-  padding: 10px 22px 10px 10px;
   transition: background 0.15s, color 0.15s;
   background: none;
   box-sizing: border-box;
+  /* merged unique properties from all blocks */
+  gap: 16px;
+  font-size: 17px;
+  padding: 10px 22px 10px 10px;
+  /* for .dropdown-col context */
+  flex-direction: row;
+  gap: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 6px 8px;
+  /* for .dropdown-menu context */
+  min-width: 164px;
+  gap: 12px;
 }
 header .dropdown-item:hover {
   background: #f4f6f8;
   color: #222;
+  /* for .dropdown-col context */
+  background: rgba(139,149,161,0.08);
+  color: #08f;
+  /* for .dropdown-menu context */
+  background-color: rgba(139,149,161,.1);
 }
 header .dropdown-item img {
   width: 44px;
@@ -124,58 +138,18 @@ header .dropdown-item img {
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   flex-shrink: 0;
   margin-right: 15px;
-}
-/* span 제거: 텍스트는 a 내부에 바로 위치 */
-/* ===================== GNB 드롭다운(알툴즈 다운로드) 3컬럼 카테고리별 세로정렬 ===================== */
-
-header .dropdown-col {
-  min-width: 180px;
-  display: flex;
-  flex-direction: column;
-}
-header .dropdown-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #4e5968;
-  margin-bottom: 18px;
-  letter-spacing: -1px;
-}
-header .dropdown-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-header .dropdown-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none;
-  color: #222;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 8px;
-  padding: 6px 8px;
-  transition: background 0.15s, color 0.15s;
-}
-header .dropdown-item:hover {
-  background: rgba(139,149,161,0.08);
-  color: #08f;
-}
-header .dropdown-item img {
+  /* for .dropdown-col context */
   width: 38px;
   height: 38px;
-  object-fit: contain;
   border-radius: 8px;
-  background: #f8f8f8;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 header .dropdown-item span {
   font-size: 15px;
   font-weight: 600;
   display: block;
 }
-/* ===================== GNB 드롭다운(알툴즈 다운로드) 3열 아이콘+텍스트 그리드 ===================== */
+
+/* ===================== GNB Dropdown (Altools Download) 3-column Icon+Text Grid ===================== */
 header .gnb-download-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -216,7 +190,8 @@ header .gnb-download-grid .dropdown-item span {
 header .gnb-download-grid .dropdown-item:hover {
   color: #08f;
 }
-/* ===================== 푸터 알툴즈 다운로드 3열 아이콘+텍스트 그리드 ===================== */
+
+/* ===================== Footer Altools Download 3-column Icon+Text Grid ===================== */
 footer .footer-download-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -253,7 +228,26 @@ footer .footer-download-item span {
 footer .footer-download-item:hover {
   color: #08f;
 }
-/* ===================== GNB 드롭다운(알툴즈 다운로드) 제품 아이콘+텍스트 그리드 ===================== */
+
+/* ===================== GNB Dropdown (Altools Download) 3-column Category Vertical Alignment ===================== */
+header .dropdown-col {
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+header .dropdown-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4e5968;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+header .dropdown-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+/* ===================== GNB Dropdown (Altools Download) Product Icon+Text Grid ===================== */
 header .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -270,7 +264,6 @@ header .dropdown-menu {
   flex-direction: column;
   gap: 24px;
 }
-
 header .dropdown-col {
   min-width: 180px;
 }
@@ -286,19 +279,8 @@ header .dropdown-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 13px;
 }
-header .dropdown-item {
-  min-width: 164px;
-  align-items: center;
-  flex-direction: row;
-  gap: 12px;
-  text-decoration: none;
-  color: #222;
-}
 header .dropdown-grid.grid-4::after{
   display: none;
-}
-header .dropdown-item:hover {
-  background-color: rgba(139,149,161,.1);
 }
 header .dropdown-icon {
   flex-shrink: 0;
@@ -352,7 +334,8 @@ header .dropdown-pack em {
   font-weight: 700;
   padding-left: 12px;
 }
-/* ===================== GNB 드롭다운(알툴즈 다운로드) 이미지 스타일 ===================== */
+
+/* ===================== GNB Dropdown (Altools Download) Image Styles ===================== */
 header .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -369,7 +352,6 @@ header .dropdown-menu {
   gap: 24px;
   margin-top: 8px;
 }
-
 header .dropdown-col {
   min-width: 180px;
 }
@@ -417,7 +399,7 @@ header .dropdown-pack {
   border-radius: 16px;
   padding: 18px 0 18px 0;
   width: 100%;
-  height: 56px;
+  height: 30px;
   max-width: 700px;
   text-align: center;
   text-decoration: none;
@@ -433,11 +415,13 @@ header .dropdown-pack b {
 header .dropdown-pack:hover {
   background: linear-gradient(90deg, #ff7e5f 0%, #ff5e8a 100%);
 }
-/* 드롭다운 메뉴 상위 li에 position:relative와 z-index 부여 */
+
+/* Add position:relative and z-index to parent li of dropdown menu */
 header li.gnb-dropdown {
   z-index: 300;
 }
-/* ===================== GNB 드롭다운(알툴즈 다운로드) 개선 ===================== */
+
+/* ===================== GNB Dropdown (Altools Download) Improvements ===================== */
 header .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -488,17 +472,12 @@ header .dropdown-bottom {
   text-align: right;
   position: relative;
 }
-header .dropdown-pack {
-  color: #08f;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-}
-/* slick promotion: 내부에 a 없는 빈 슬라이드는 아예 숨김 (빈 슬라이드 UX 개선) */
+
+/* slick promotion: Completely hide empty slides without an 'a' inside (empty slide UX improvement) */
 section#promotion .promotionAni .slick-slide:not(:has(a)) {
   display: none !important;
 }
-/* slick promotion 슬라이드: data-slick-index 기반으로 원본/복제 모두 배경이미지 적용 */
+/* slick promotion slides: Apply background images to both original/cloned slides based on data-slick-index */
 section#promotion .promotionAni .slick-slide[data-slick-index="0"] a,
 section#promotion .promotionAni .slick-cloned[data-slick-index="0"] a {
   background-image: url(../img/promotion.jpg);
@@ -515,7 +494,7 @@ section#promotion .promotionAni .slick-slide[data-slick-index="3"] a,
 section#promotion .promotionAni .slick-cloned[data-slick-index="3"] a {
   background-image: url(../img/promotion4.jpg);
 }
-/* slick promotion 슬라이드: 복제(slide-cloned)에도 배경이미지 적용 */
+/* slick promotion slides: Apply background images to cloned (slide-cloned) slides as well */
 section#promotion .promotionAni .slick-cloned a {
   background-size: cover;
   background-position: center;
@@ -534,7 +513,8 @@ section#promotion .promotionAni .slick-cloned:nth-child(3) a {
 section#promotion .promotionAni .slick-cloned:nth-child(4) a {
   background-image: url(../img/promotion4.jpg);
 }
-/* 슬라이드 커스텀 컨트롤 버튼 */
+
+/* Slide custom control buttons */
 .wnext {
   position: absolute;
   top: 548px;
@@ -544,8 +524,8 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
   gap: 14px;
   align-items: center;
 }
-/* 슬라이드 번호 중앙 정렬 */
 
+/* Center align slide number */
 .wnext .slide-index {
   display: inline-block;
   min-width: 40px;
@@ -571,7 +551,7 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
   color: #000;
 }
 
-/*상단 영역*/
+/* Top area */
 header {
   padding: 0 40px;
 }
@@ -627,7 +607,8 @@ header div.wrap2 span {
   justify-content: center;
   align-items: center;
 }
-/* 에이플포인트앱출시 버튼 전용 */
+
+/* Aplus Point App Launch Button Only */
 header div.wrap2 span .aplus-btn {
   padding: 10px 20px;
   width: 148px;
@@ -638,7 +619,7 @@ header div.wrap2 span .aplus-btn {
   color: transparent;
 }
 
-/* 로그인 버튼 */
+/* Login button */
 header .wrap2 .login-btn {
   height: 36px;
   font-size: 13px;
@@ -654,7 +635,8 @@ header .wrap2 .login-btn {
 header div.wrap2 span .login-btn:hover {
   opacity: 0.7;
 }  
-/* 타이틀영역 */
+
+/* Title area */
 #title {
   max-width: 2560px; 
   width: calc(100% - 80px); 
@@ -698,7 +680,6 @@ header div.wrap2 span .login-btn:hover {
   margin: 0 auto;
   width: 1125px;
 }
-
 .titleAni div h2.bold {
   line-height: 1.4;
   letter-spacing: -2px;
@@ -758,7 +739,8 @@ header div.wrap2 span .login-btn:hover {
   top: 75px;
   border-radius: 25px;
 }
-/*메인 영역*/
+
+/* Product */
 section#product {
   width: 100%;
 }
@@ -766,14 +748,10 @@ section#product div.wrap {
   margin: 0 auto;
   width: calc(100% - 80px);
 }
-section#product div.wrap h2 {
-  
-}
-section#product div.wrap ul {
-  justify-content: space-between;
-  gap: 12px;
-  display: flex;
-}
+section#product div.wrap ul{
+		display: flex;
+        gap: 15px;
+	}
 section#product div.wrap ul li {
   width: calc(100% / 8);
   transition: transform .2s ease;
@@ -787,7 +765,7 @@ section#product div.wrap ul li a {
   border-radius: 15px;
   height: 100px;
   line-height: 1.2;
-  padding-left: 22px;
+  padding-left: 30px;
 }
 section#product div.wrap ul li a figure {
   gap: 10px;
@@ -798,9 +776,6 @@ section#product div.wrap ul li a figure {
 section#product div.wrap ul li a figure img {
   width: 44px;
   height: 44px;
-}
-section#product div.wrap ul li a figure figcaption {
-  
 }
 section#product div.wrap ul li a figure figcaption h3 {
   margin-bottom: 5px;
@@ -825,6 +800,8 @@ section#product div.wrap ul li a figure figcaption p {
   letter-spacing: -.5px;
   color: rgba(26, 26, 26, .5);
 }
+
+/* Service */
 section#service {
   padding: 0 40px;
 }
@@ -843,9 +820,6 @@ section#service div {
   background-size: cover;
   background-color: #333;
   background-position: center;
-}
-section#service div h2 {
-  
 }
 section#service div p {
   display: block;
@@ -874,7 +848,7 @@ section#service div a::after {
   margin-left: 5px;
 }
 
-/* 비즈니스 구매 */
+/* Business */
 section#business {
   padding: 0 40px;
 }
@@ -901,9 +875,6 @@ section#business .wrap {
 }
 section#business .wrap:hover {
   filter: grayscale(1);
-}
-section#business div h2 {
-  
 }
 section#business div p {
   display: block;
@@ -933,7 +904,7 @@ section#business div a::after {
   margin-left: 5px;
 }
 
-/* 알툴즈 */
+/* Altools */
 section#altools {
   max-width: 1400px;
   width: calc(100% - 80px);
@@ -949,10 +920,7 @@ section#altools div.wrap {
   align-items: center;
   gap: 50px;
   margin: 0 auto;
-  padding: 120px 0 90px;
-}
-section#altools div.wrap h2 {
-  
+  padding: 120px 0 80px;
 }
 section#altools div.wrap ul.list {
   position: relative;
@@ -960,9 +928,6 @@ section#altools div.wrap ul.list {
 }
 .slick-initialized .slick-slide > div{
   margin-bottom: 60px;
-}
-section#altools div.wrap ul.list .slick-prev::before, section#altools div.wrap ul.list .slick-next::before{
-  
 }
 section#altools div.wrap ul.list .slick-prev::before{
   content: '';
@@ -988,11 +953,9 @@ section#altools div.wrap ul.list .slick-next::before{
   left: 3px;
 }
 section#altools div.wrap ul.list button{
-  /*! position: static; */   
   top: 0px;
   left: -28px;
 }
-
 section#altools div.wrap ul.list .wnext{
   position: absolute;
   display: flex;
@@ -1001,7 +964,6 @@ section#altools div.wrap ul.list .wnext{
   right: -4.5vw;
   top: 8vw;
 }
-
 section#altools div.wrap ul.list li.m {
   transition: 0.5s;
   box-sizing: border-box;
@@ -1072,7 +1034,6 @@ section#altools div.wrap ul li a h3::before{
 }
 section#altools div.wrap ul li.m1 a h3::before{
   background-image: url(../img/icon_120_comb.png);
-
 }
 section#altools div.wrap ul li.m2 a h3::before{
   background-image: url(../img/icon3.png);
@@ -1129,9 +1090,6 @@ section#promotion div.wrap {
   height: 360px;
   position: relative;
 }
-section#promotion div.wrap h2 {
-  
-}
 section#promotion div.wrap ul {
   width: 100%;
   height: 100%;
@@ -1171,7 +1129,6 @@ section#promotion div.wrap ul {
 }
 section#promotion div.wrap ul li {
   width: 100%;
-
   height: 360px;
 }
 section#promotion div.wrap ul li a {
@@ -1200,18 +1157,12 @@ section#promotion div.wrap ul li a h3 {
   line-height: 1.4;
   display: none;
 }
-section#promotion div.wrap ul li a h3 strong {
-  
-}
-section#promotion div.wrap ul li a h3 i {
-  
-}
 section#promotion div.wrap ul li a p {
   line-height: 1.4;
   display: none;
 }
 
-/*슬릭*/
+/* Slick */
 .slick-prev{
   left: 40px;
   width: 48px;
@@ -1226,7 +1177,7 @@ section#promotion div.wrap ul li a p {
   top: 59%;
 }
 
-/* 팁 */
+/* Tip */
 section#tip {
   max-width: 2560px;
   width: calc(100% - 80px);
@@ -1234,7 +1185,6 @@ section#tip {
   margin: 28px auto 0;
 }
 section#tip div.wrap {
- 
   max-width: initial;
   flex-direction: column;
   align-items: center;
@@ -1284,7 +1234,6 @@ section#tip div.wrap ul li a {
   padding-bottom: 65px;
   position: relative;
 }
-
 section#tip div.wrap ul li a::after{
   content: "";
   display: block;
@@ -1301,7 +1250,6 @@ section#tip div.wrap ul li a::after{
   transition: 0.5s;
 }
 section#tip div.wrap ul li a:hover::after{
-  
   right: 20px;
 }
 section#tip div.wrap ul li:nth-child(1) a{
@@ -1337,7 +1285,7 @@ section#tip div.wrap ul li a p {
   line-height: 1.4;
 }
 
-/* 뉴스 */
+/* News */
 section#news {
   height: 340px;
   background-image: url(../img/newsbg.jpg);
@@ -1352,9 +1300,6 @@ section#news div {
   padding: 0;
   width: 100%;
   margin: 0 auto;
-}
-section#news div h2 {
-  
 }
 section#news div ul {
   width: 1000px;
@@ -1404,7 +1349,8 @@ section#news div ul li a span {
   grid-column: 3;
   grid-row: 3;
 }
-/* 하단 */
+
+/* Footer */
 footer {
   position: relative;
  }
@@ -1425,16 +1371,10 @@ footer {
    z-index: -1;
    background-color: rgba(245,246,247,.75);
  }
- 
- footer div h1 {
-  
- }
  footer div ul.fnb {
   margin-bottom: 50px;
   justify-content: space-between;
   line-height:1.4;
- }
- footer div ul.fnb>li {
  }
  footer div ul.fnb > li:nth-child(1){
    width: calc(100% / 3.5);
@@ -1445,9 +1385,6 @@ footer {
  }
  footer div ul.fnb>li ul {
   flex-wrap: wrap;
- }
- footer div ul.fnb>li ul li {
-  
  }
  footer div ul.fnb>li:nth-child(1) ul li{
    width: calc(100% / 2);
@@ -1465,37 +1402,28 @@ footer {
   padding: 8px 10px;
 }
 footer div ul.fnb>li ul li a:hover {
-  background-color: rgba(139,149,161,.1); /* darkgrey 느낌 */
-   /* 기존 padding + 3px */
-   /* 선택사항: 글자색 반전 */
+  background-color: rgba(139,149,161,.1);
 }
 footer div ul.fnb2{
   padding-top: 30px;
   grid-template-columns: repeat(6,auto) 1fr;
   margin-bottom: 30px;
-  flex-direction: column;
+  align-items: baseline;
 }
- footer div ul.fnb2 li {
-  
- }
  footer div ul.fnb2 li:last-child{
    justify-self: right;
  }
-.fnb2 > li > a {
- padding: 10px;
- }
-
  footer div ul.fnb2>li a {
   line-height: 2;
   font-size: 13px;
   line-height: 1;
   font-weight: 600;
   color: #8b95a1;
+  padding-right: 10px;
  }
 footer div ul.fnb2>li a:hover{
   background-color: rgba(139,149,161,.1); /* darkgrey 느낌 */
   border-radius: 5px;
-
 }
  footer div ul.sns {
   gap:10px;
