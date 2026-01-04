@@ -1418,7 +1418,7 @@ footer div ul.fnb2{
   line-height: 1;
   font-weight: 600;
   color: #8b95a1;
-  padding-right: 10px;
+  padding-right: 30px;
  }
 footer div ul.fnb2>li a:hover{
   background-color: rgba(139,149,161,.1); /* darkgrey 느낌 */
