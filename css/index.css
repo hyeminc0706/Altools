@@ -1,0 +1,1459 @@
+/* ======= Footer Family Site Dropdown ======= */
+footer .family-site-dropdown {
+  position: relative;
+  display: inline-block;
+}
+footer .family-site-toggle {
+  cursor: pointer;
+  font-weight: 700;
+  color: #5a6473;
+  font-size: 20px;
+  letter-spacing: -1px;
+  position: relative;
+  z-index: 2;
+}
+footer .family-site-toggle .plus {
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 2px;
+}
+footer .family-site-list {
+  position: absolute;
+  left: 45%;
+  bottom: 37px;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(30,40,60,0.13);
+  margin: 0;
+  list-style: none;
+  z-index: 10;
+  text-align: left;
+  border: none;
+  height: 100%;
+  min-height: 191px;
+  padding: 6px 0px 6px 5px;
+}
+footer .family-site-list li {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3a4350;
+  letter-spacing: -0.5px;
+  position: relative;
+  width: 105px;
+  height: 32px;
+}
+footer .family-site-list li:nth-child(1) a {
+  display: block;
+  align-items: center;
+  color: #3a4350;
+  border-radius: 6px;
+  transition: background 0.13s, color 0.13s;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+footer .family-site-list a:hover {
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* ===================== GNB Dropdown 4-column Grid ===================== */
+header .dropdown-section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+header .dropdown-group {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+header .dropdown-group:nth-of-type(2){
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+header .dropdown-group:nth-of-type(3){
+  grid-column: 2;
+  grid-row: 2;
+}
+header .dropdown-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4e5968;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+header .dropdown-grid.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .dropdown-grid a::after{
+  display: none !important;
+}
+/* Unified dropdown-item styles */
+header .dropdown-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  border-radius: 14px;
+  transition: background 0.15s, color 0.15s;
+  background: none;
+  box-sizing: border-box;
+  /* merged unique properties from all blocks */
+  gap: 16px;
+  font-size: 17px;
+  padding: 10px 22px 10px 10px;
+  /* for .dropdown-col context */
+  flex-direction: row;
+  gap: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 6px 8px;
+  /* for .dropdown-menu context */
+  min-width: 164px;
+  gap: 12px;
+}
+header .dropdown-item:hover {
+  background: #f4f6f8;
+  color: #222;
+  /* for .dropdown-col context */
+  background: rgba(139,149,161,0.08);
+  color: #08f;
+  /* for .dropdown-menu context */
+  background-color: rgba(139,149,161,.1);
+}
+header .dropdown-item img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  flex-shrink: 0;
+  margin-right: 15px;
+  /* for .dropdown-col context */
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+}
+header .dropdown-item span {
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+}
+
+/* ===================== GNB Dropdown (Altools Download) 3-column Icon+Text Grid ===================== */
+header .gnb-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .gnb-download-grid .dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+header .gnb-download-grid .dropdown-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+header .gnb-download-grid .dropdown-item span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+header .gnb-download-grid .dropdown-item:hover {
+  color: #08f;
+}
+
+/* ===================== Footer Altools Download 3-column Icon+Text Grid ===================== */
+footer .footer-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 32px;
+  margin: 24px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+footer .footer-download-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+footer .footer-download-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+footer .footer-download-item span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+footer .footer-download-item:hover {
+  color: #08f;
+}
+
+/* ===================== GNB Dropdown (Altools Download) 3-column Category Vertical Alignment ===================== */
+header .dropdown-col {
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+header .dropdown-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4e5968;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+header .dropdown-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+/* ===================== GNB Dropdown (Altools Download) Product Icon+Text Grid ===================== */
+header .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  background: hsla(0,0%,100%,.98);
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.25),0 8px 20px 0 rgba(0,0,0,.15);
+  border-radius: 12px;
+  min-width: 700px;
+  max-width: 900px;
+  padding: 32px 40px 24px 40px;
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+}
+header .dropdown-col {
+  min-width: 180px;
+}
+header .dropdown-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4e5968;
+  padding: 0 10px;
+  margin-bottom: 12px;
+}
+header .dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+header .dropdown-grid.grid-4::after{
+  display: none;
+}
+header .dropdown-icon {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+header .dropdown-item strong {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: #222;
+}
+header .dropdown-bottom {
+  text-align: center;
+}
+header .dropdown-pack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 35px;
+  background: linear-gradient(90deg,#ff6746,#ff477e);
+  border-radius: 8px;
+  padding-left: 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255,94,138,0.08);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+  letter-spacing: -1px;
+  transition: background 0.2s;
+}
+header .dropdown-pack strong {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+header .dropdown-pack em {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 12px;
+}
+
+/* ===================== GNB Dropdown (Altools Download) Image Styles ===================== */
+header .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 200;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  border-radius: 20px;
+  min-width: 800px;
+  max-width: 1000px;
+  padding: 40px 48px 32px 48px;
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 8px;
+}
+header .dropdown-col {
+  min-width: 180px;
+}
+header .dropdown-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+header .dropdown-col ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  gap: 8px;
+  min-width: 90px;
+  min-height: 70px;
+  text-align: center;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+header .dropdown-col ul li span {
+  font-size: 38px;
+  display: block;
+  margin-bottom: 2px;
+}
+header .dropdown-col ul li:hover {
+  color: #08f;
+}
+header .dropdown-bottom {
+  border-top: none;
+  padding-top: 0;
+  text-align: center;
+}
+header .dropdown-pack {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff5e8a 0%, #ff7e5f 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 16px;
+  padding: 18px 0 18px 0;
+  width: 100%;
+  height: 30px;
+  max-width: 700px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255,94,138,0.08);
+  margin: 0 auto;
+  letter-spacing: -1px;
+  transition: 0.2s;
+}
+header .dropdown-pack b {
+  font-weight: 900;
+  margin-left: 8px;
+}
+header .dropdown-pack:hover {
+  background: linear-gradient(90deg, #ff7e5f 0%, #ff5e8a 100%);
+}
+
+/* Add position:relative and z-index to parent li of dropdown menu */
+header li.gnb-dropdown {
+  z-index: 300;
+}
+
+/* ===================== GNB Dropdown (Altools Download) Improvements ===================== */
+header .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 200;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  border-radius: 12px;
+  min-width: 420px;
+  max-width: 700px;
+  padding: 24px 32px 16px 32px;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+}
+header li.gnb-dropdown:hover > .dropdown-menu,
+header li.gnb-dropdown:focus-within > .dropdown-menu {
+  display: flex;
+}
+
+header .dropdown-col {
+  min-width: 120px;
+}
+header .dropdown-title {
+  font-weight: 400;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: #4e5968;
+}
+header .dropdown-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .dropdown-col ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 4px 0;
+  gap: 6px;
+}
+header .dropdown-col ul li span {
+  font-size: 18px;
+  margin-right: 6px;
+}
+header .dropdown-bottom {
+  border-top: 1px solid #eee;
+  text-align: right;
+  position: relative;
+}
+
+/* slick promotion: Completely hide empty slides without an 'a' inside (empty slide UX improvement) */
+section#promotion .promotionAni .slick-slide:not(:has(a)) {
+  display: none !important;
+}
+/* slick promotion slides: Apply background images to both original/cloned slides based on data-slick-index */
+section#promotion .promotionAni .slick-slide[data-slick-index="0"] a,
+section#promotion .promotionAni .slick-cloned[data-slick-index="0"] a {
+  background-image: url(../img/promotion.jpg);
+}
+section#promotion .promotionAni .slick-slide[data-slick-index="1"] a,
+section#promotion .promotionAni .slick-cloned[data-slick-index="1"] a {
+  background-image: url(../img/promotion2.jpg);
+}
+section#promotion .promotionAni .slick-slide[data-slick-index="2"] a,
+section#promotion .promotionAni .slick-cloned[data-slick-index="2"] a {
+  background-image: url(../img/promotion3.jpg);
+}
+section#promotion .promotionAni .slick-slide[data-slick-index="3"] a,
+section#promotion .promotionAni .slick-cloned[data-slick-index="3"] a {
+  background-image: url(../img/promotion4.jpg);
+}
+/* slick promotion slides: Apply background images to cloned (slide-cloned) slides as well */
+section#promotion .promotionAni .slick-cloned a {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/promotion3.jpg);
+}
+section#promotion .promotionAni .slick-cloned:nth-child(1) a {
+  background-image: url(../img/promotion.jpg);
+}
+section#promotion .promotionAni .slick-cloned:nth-child(2) a {
+  background-image: url(../img/promotion2.jpg);
+}
+section#promotion .promotionAni .slick-cloned:nth-child(3) a {
+  background-image: url(../img/promotion3.jpg);
+}
+section#promotion .promotionAni .slick-cloned:nth-child(4) a {
+  background-image: url(../img/promotion4.jpg);
+}
+
+/* Slide custom control buttons */
+.wnext {
+  position: absolute;
+  top: 548px;
+  left: 354px;
+  z-index: 100;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* Center align slide number */
+.wnext .slide-index {
+  display: inline-block;
+  min-width: 40px;
+  text-align: center;
+  font-size: 10px;
+  color: #222;
+  padding-top: 3px;
+  margin-left: 15px;
+}
+.wnext button {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.wnext button:last-of-type{
+  padding-left: 15px
+}
+.wnext button:hover {
+  color: #000;
+}
+
+/* Top area */
+header {
+  padding: 0 40px;
+}
+header div.wrap2 {
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 0 0px;
+}
+header div.wrap2 h1 {
+  background-image: url(../img/logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 73.17px;
+  height: 17px;
+}
+header div.wrap2 h1 a {
+  color: transparent;
+}
+header div.wrap2 ul {
+  gap: 50px;
+}
+header div.wrap2 .flex li {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+header div.wrap2 .flex li a {
+  will-change: background-color;
+  transition: background-color .1s ease 0s;
+  display: block;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 700;
+  border-radius: 6px;
+}
+header div.wrap2 .flex li>a::after {
+  width: 12px;
+  height: 12px;
+  vertical-align: 1px;
+  background: url(../img/drop_black.png) no-repeat center;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  position: absolute;
+  top: 8px;
+  right: -16px;
+}
+header div.wrap2 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Aplus Point App Launch Button Only */
+header div.wrap2 span .aplus-btn {
+  padding: 10px 20px;
+  width: 148px;
+  height: 32px;
+  background-image: url(../img/aplus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+/* Login button */
+header .wrap2 .login-btn {
+  height: 36px;
+  font-size: 13px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+header div.wrap2 span .login-btn:hover {
+  opacity: 0.7;
+}  
+
+/* Title area */
+#title {
+  max-width: 2560px; 
+  width: calc(100% - 80px); 
+  margin: 0 auto; 
+  height: 600px; 
+  border-radius: 28px; 
+  overflow: hidden; 
+  display: block;
+  isolation: isolate;
+  position: relative;
+}
+#title div.wrap {
+  background-color: #67d1fe;
+}
+#title div.wrap > h2 {
+  display: none;
+}
+.titleAni{
+  width: 100%; height: 100%;
+}
+.t1,.t2,.t3,.t4{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.t1{
+  background-color: #ffa15d;
+}
+.t2{
+  background-color: #ff6a71;
+}
+.t3{
+  background-color: #33aeff;
+}
+.t4{
+  background-color: #fede63;
+}
+.tbox,.t2box{
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+  width: 1125px;
+}
+.titleAni div h2.bold {
+  line-height: 1.4;
+  letter-spacing: -2px;
+  word-break: keep-all;
+  padding-top: 141px;
+}
+.titleAni div p {
+  line-height: 1.6;
+  letter-spacing: -.5px;
+  margin-top: 17px;
+}
+.titleAni a {
+  height: 66px; font-size: 18px; max-width: 216px; background-color: #fff; display: flex; align-items: center; justify-content: center;   /*! white-space: nowrap; */ border-radius: 8px; text-indent: -17px;
+  margin-top: 40px;
+  position: relative;
+}
+.titleAni a:hover{
+  background-color: hsla(0,0%,100%,.85);
+}
+.t1 a::after{
+ content: ">";
+ left: 192px; 
+ position: absolute;
+ top: 24px; 
+ z-index: 99;
+}
+.t2 a::after{
+ content: ">";
+ left: 201px; 
+ position: absolute;
+ bottom: 24px; 
+ z-index: 99;
+}
+.t3 a::after{
+ content: ">";
+ left: 197px; 
+ position: absolute;
+ bottom: 24px; 
+ z-index: 99;
+}
+.t4 a::after{
+ content: ">";
+ left: 201px; 
+ position: absolute;
+ bottom: 24px; 
+ z-index: 99;
+}
+.tbox img{
+  position: absolute;
+  right: -29px;
+  top: 92px;
+}
+.t2box > img{
+  position: absolute;
+  width: 790px;
+  right: -50px;
+  top: 75px;
+  border-radius: 25px;
+}
+
+/* Product */
+section#product {
+  width: 100%;
+}
+section#product div.wrap {
+  margin: 0 auto;
+  width: calc(100% - 80px);
+}
+section#product div.wrap ul{
+		display: flex;
+        gap: 15px;
+	}
+section#product div.wrap ul li {
+  width: calc(100% / 8);
+  transition: transform .2s ease;
+}
+section#product div.wrap ul li:hover {
+   transform: translateY(-10px); 
+}
+section#product div.wrap ul li a {
+  background-color: white;
+  box-shadow: 0 0 2px rgba(0,0,0,.08),4px 12px 36px rgba(0,0,0,.09);
+  border-radius: 15px;
+  height: 100px;
+  line-height: 1.2;
+  padding-left: 30px;
+}
+section#product div.wrap ul li a figure {
+  gap: 10px;
+  height: 100%;
+  justify-content: left;
+  align-items: center;
+}
+section#product div.wrap ul li a figure img {
+  width: 44px;
+  height: 44px;
+}
+section#product div.wrap ul li a figure figcaption h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -.5px;
+}
+section#product div.wrap ul li a figure figcaption h3::after {
+  content:"";
+  width: 4.5px;
+  height: 4.5px;
+  display: inline-block;
+  border: 2px solid;
+  transform: translateY(-2px) translateX(4px) rotate(45deg);
+  border-left: transparent;
+  border-bottom: transparent;
+}
+section#product div.wrap ul li a figure figcaption p {
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: -.5px;
+  color: rgba(26, 26, 26, .5);
+}
+
+/* Service */
+section#service {
+  padding: 0 40px;
+}
+section#service div {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: initial;
+  height: 600px;
+  border-radius: 20px;
+  gap: 50px;
+  text-align: center;
+  line-height: 1.4;
+  background-image: url(../img/adzero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  background-position: center;
+}
+section#service div p {
+  display: block;
+  color: black;
+}
+section#service div a {
+  padding: 15px 36px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: black;
+  color: #fff;
+}
+section#service div a:hover {
+  background-color: #666;  
+}
+section#service div a::after {
+  content: "";
+  transform: translateY(-1px) translateX(3px) rotate(45deg);
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-left: transparent;
+  border-bottom: transparent;
+  margin-left: 5px;
+}
+
+/* Business */
+section#business {
+  padding: 0 40px;
+}
+section#business .wrap {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: initial;
+  height: 600px;
+  border-radius: 20px;
+  gap: 50px;
+  text-align: center;
+  line-height: 1.4;
+  background-image: url(../img/business.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  background-position: center;
+  color: #fff;
+  filter: grayscale(0);
+  transition: 1s;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+section#business .wrap:hover {
+  filter: grayscale(1);
+}
+section#business div p {
+  display: block;
+  color: #fff;
+}
+section#business div a {
+  height: 20px;
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 1000;
+  color: black;
+}
+section#business div a:hover {
+  background-color: #666;  
+}
+section#business div a::after {
+  content: "";
+  transform: translateY(-1px) translateX(3px) rotate(45deg);
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #000000;
+  border-left: transparent;
+  border-bottom: transparent;
+  margin-left: 5px;
+}
+
+/* Altools */
+section#altools {
+  max-width: 1400px;
+  width: calc(100% - 80px);
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 28px auto 0;
+}
+section#altools div.wrap {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 120px 0 80px;
+}
+section#altools div.wrap ul.list {
+  position: relative;
+  display: flex;
+}
+.slick-initialized .slick-slide > div{
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+section#altools div.wrap ul.list .slick-prev::before{
+  content: '';
+  background-image: url(../img/slick/arrowback.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: .7vw;
+  top: 8.5vw;
+}
+section#altools div.wrap ul.list .slick-next::before{
+  content: '';
+  background-image: url(../img/slick/arrownext.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 3px;
+}
+section#altools div.wrap ul.list button{
+  top: 0px;
+  left: -28px;
+}
+section#altools div.wrap ul.list .wnext{
+  position: absolute;
+  display: flex;
+  gap: 2px;
+  bottom: 0;
+  right: -4.5vw;
+  top: 8vw;
+}
+section#altools div.wrap ul.list li.m {
+  transition: 0.5s;
+  box-sizing: border-box;
+  margin-right: 25px;
+}
+section#altools div.wrap ul.list li.m:hover{
+  transform: translateY(-10px)
+}
+section#altools div.wrap ul.list li.m a {
+  padding: 0px 20px 24px 20px;
+  height: 340px;
+  width: 270px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 20px;
+}
+section#altools div.wrap ul.list li.m a h3{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+section#altools div.wrap ul.list li.m a::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-radius: 20px;
+  background-color: #ccc;
+}
+section#altools div.wrap ul li:nth-child(1) a::before{
+  background-image: url(../img/altools1.jpg);
+}
+section#altools div.wrap ul li:nth-child(2) a::before{
+  background-image: url(../img/altools2.jpg);
+}
+section#altools div.wrap ul li:nth-child(3) a::before{
+  background-image: url(../img/altools3.jpg);
+}
+section#altools div.wrap ul li:nth-child(4) a::before{
+  background-image: url(../img/altools4.jpg);
+}
+section#altools div.wrap ul li:nth-child(5) a::before{
+  background-image: url(../img/altools5.jpg);
+}
+section#altools div.wrap ul li:nth-child(6) a::before{
+  background-image: url(../img/altools6.jpg);
+}
+section#altools div.wrap ul li:nth-child(7) a::before{
+  background-image: url(../img/altools7.jpg);
+}
+section#altools div.wrap ul li:nth-child(8) a::before{
+  background-image: url(../img/altools8.jpg);
+}
+section#altools div.wrap ul li a h3::before{
+  content:"";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-size: contain;
+  background-position: center;
+  vertical-align: -15px;
+  margin-right: 10px;
+}
+section#altools div.wrap ul li.m1 a h3::before{
+  background-image: url(../img/icon_120_comb.png);
+}
+section#altools div.wrap ul li.m2 a h3::before{
+  background-image: url(../img/icon3.png);
+}
+section#altools div.wrap ul li.m3 a h3::before{
+  background-image: url(../img/icon_120_alyac.png);
+}
+section#altools div.wrap ul li.m4 a h3::before{
+  background-image: url(../img/icon_120_alc.png);
+}
+section#altools div.wrap ul li.m5 a h3::before{
+  background-image: url(../img/icon_120_alcapture.png);
+}
+section#altools div.wrap ul li.m6 a h3::before{
+  background-image: url(../img/icon_120_alpdf.png);
+}
+section#altools div.wrap ul li.m7 a h3::before{
+  background-image: url(../img/icon_120_alsong.png);
+}
+section#altools div.wrap ul li.m8 a h3::before{
+  background-image: url(../img/icon_120_aldrive.png);
+}
+section#altools div.wrap ul.list li.m a p {
+  line-height: 1.4;
+  letter-spacing: -1px;
+  height: 73px;
+}
+section#altools div.wrap ul.list li.m a > span {
+  align-self: end;
+  color: #08f;
+}
+section#altools div.wrap ul.list li.m a > span::after{
+  content:"";
+  display: inline-block;
+  width: 5px;
+  border: 1px solid;
+  border-left: transparent;
+  border-bottom: transparent;
+  transform: translateY(-1px) rotate(45deg);
+  height: 5px;
+}
+
+/* 프로모션 */
+section#promotion {
+  position: relative;
+}
+section#promotion div.wrap {
+  max-width: 2560px;
+  width: calc(100% - 80px);
+  border-radius: 28px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 360px;
+  position: relative;
+}
+section#promotion div.wrap ul {
+  width: 100%;
+  height: 100%;
+}
+
+/* 프로모션 커스텀 네비게이션 버튼 */
+.promotion-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffffc7;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  pointer-events: auto;
+}
+.promotion-arrow img {
+  width: 24px;
+  height: 24px;
+}
+.promotion-arrow.promotion-prev {
+  left: 25px;
+}
+.promotion-arrow.promotion-next {
+  right: 25px;
+}
+.promotion-arrow:hover {
+  background: #fff;
+}
+section#promotion div.wrap ul li {
+  width: 100%;
+  height: 360px;
+}
+section#promotion div.wrap ul li a {
+  flex-direction: column; 
+  width: 100%; 
+  height: 100%; 
+  justify-content: center; 
+  gap: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section#promotion div.wrap ul li:nth-child(1) a{
+ background-image: url(../img/promotion.jpg);  
+}
+section#promotion div.wrap ul li:nth-child(2) a{
+ background-image: url(../img/promotion2.jpg);  
+}
+section#promotion div.wrap ul li:nth-child(3) a{
+ background-image: url(../img/promotion3.jpg);  
+}
+section#promotion div.wrap ul li:nth-child(4) a{
+ background-image: url(../img/promotion4.jpg);  
+}
+section#promotion div.wrap ul li a h3 { 
+  line-height: 1.4;
+  display: none;
+}
+section#promotion div.wrap ul li a p {
+  line-height: 1.4;
+  display: none;
+}
+
+/* Slick */
+.slick-prev{
+  left: 40px;
+  width: 48px;
+  height: 48px;
+  will-change: background-color;
+  transition: background-color .2s ease 0s;
+  background-color: hsla(0,0%,100%,.9);
+  background-image: url(../img/arrowright.png);
+  z-index: 99;
+  border-radius: 100%;
+  margin-top: -24px;
+  top: 59%;
+}
+
+/* Tip */
+section#tip {
+  max-width: 2560px;
+  width: calc(100% - 80px);
+  border-radius: 28px;
+  margin: 28px auto 0;
+}
+section#tip div.wrap {
+  max-width: initial;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 120px 0;
+}
+section#tip div.wrap h2 {
+font-size: 36px;
+  letter-spacing: -.5px;
+  font-weight: 700;
+  word-break: keep-all;
+  text-align: center;
+}
+section#tip div.wrap ul {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  display: grid;
+  margin-top: 30px;
+}
+section#tip div.wrap ul li {
+  height: 360px;
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+section#tip div.wrap ul li:hover{
+  transform: translateY(-20px);
+}
+section#tip div.wrap ul li:nth-child(1){
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 748px;
+}
+section#tip div.wrap ul li a {
+  padding: 40px 0 0 30px;
+  height: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-origin: content-box;
+  padding-right: 75px;
+  padding-bottom: 65px;
+  position: relative;
+}
+section#tip div.wrap ul li a::after{
+  content: "";
+  display: block;
+  width: 25px;;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  background-image: url(../img/arrow.svg);
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+section#tip div.wrap ul li a:hover::after{
+  right: 20px;
+}
+section#tip div.wrap ul li:nth-child(1) a{
+  padding-top: 70px;
+  background-image: url(../img/tip1.png);
+  background-color: #ff5e8a;
+}
+section#tip div.wrap ul li:nth-child(2) a{
+   background-image: url(../img/tip2.png);
+  background-size: 35%;
+  background-color: #f4f4f4;
+}
+section#tip div.wrap ul li:nth-child(3) a{
+   background-image: url(../img/tip3.png);
+  background-size: 32%;
+  background-color: #33b9ff;
+}
+section#tip div.wrap ul li:nth-child(4) a{
+   background-image: url(../img/tip4.png);
+  background-size: 64%;
+  background-color: #ffdb18;
+}
+section#tip div.wrap ul li:nth-child(5) a{
+   background-image: url(../img/tip5.png);
+  background-size: 35%;
+  background-color: #f4f4f4;
+}
+section#tip div.wrap ul li a h3 {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+section#tip div.wrap ul li a p {
+  line-height: 1.4;
+}
+
+/* News */
+section#news {
+  height: 340px;
+  background-image: url(../img/newsbg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section#news div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+section#news div ul {
+  width: 1000px;
+  gap: 20px;
+}
+section#news div ul li {
+  background-color: #fff;
+  width: calc(100% / 3);
+  height: 140px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section#news div ul li:hover{
+  box-shadow: 3px 3px 40px #b7b7b7;
+}
+section#news div ul li a {
+ grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: 1fr auto auto 1fr;
+ height: 100%;
+ column-gap: 20px;
+ row-gap: 13px;
+}
+section#news div ul li a::before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  align-self: center;
+}
+section#news div ul li:nth-child(1) a::before{
+  background-image: url(../img/news1.png);
+}
+section#news div ul li:nth-child(2) a::before{
+  background-image: url(../img/news2.png);
+}
+section#news div ul li:nth-child(3) a::before{
+  background-image: url(../img/news3.png);
+}
+section#news div ul li a p {
+  grid-column: 3;
+  grid-row: 2;
+}
+section#news div ul li a span {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* Footer */
+footer {
+  position: relative;
+ }
+ footer div {
+   max-width: 1120px;
+   padding-bottom: 50px !important;
+   padding-top: 50px !important;
+   margin: 0 auto;
+ }
+ footer div::before{
+   content: "";  
+   width: 100%;
+   height: 306px;
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   background-color: rgba(245,246,247,.75);
+ }
+ footer div ul.fnb {
+  margin-bottom: 50px;
+  justify-content: space-between;
+  line-height:1.4;
+ }
+ footer div ul.fnb > li:nth-child(1){
+   width: calc(100% / 3.5);
+ }
+ footer div ul.fnb>li h2 {
+   margin-bottom: 20px;
+   margin-left: 8px;
+ }
+ footer div ul.fnb>li ul {
+  flex-wrap: wrap;
+ }
+ footer div ul.fnb>li:nth-child(1) ul li{
+   width: calc(100% / 2);
+ }
+ footer div ul.fnb>li ul li a {
+  will-change: background-color;
+  transition: background-color .1s ease 0s;
+  font-size: 14.5px;
+  line-height: 1;
+  color: #8b95a1;
+  border-radius: 4px;
+  padding: 8px 10px 8px 0px;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 10px;
+}
+footer div ul.fnb>li ul li a:hover {
+  background-color: rgba(139,149,161,.1);
+}
+footer div ul.fnb2{
+  padding-top: 30px;
+  grid-template-columns: repeat(6,auto) 1fr;
+  margin-bottom: 30px;
+  align-items: baseline;
+}
+ footer div ul.fnb2 li:last-child{
+   justify-self: right;
+ }
+ footer div ul.fnb2>li a {
+  line-height: 2;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 600;
+  color: #8b95a1;
+  padding-right: 10px;
+ }
+footer div ul.fnb2>li a:hover{
+  background-color: rgba(139,149,161,.1); /* darkgrey 느낌 */
+  border-radius: 5px;
+}
+ footer div ul.sns {
+  gap:10px;
+  margin-bottom:20px;
+ }
+ footer div ul.sns li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ footer div ul.sns li a {
+  font-size: 0;
+  width: 64px;
+  height: 18px;
+  background-image: url(../img/sns1.png);
+  background-size: cover;
+ }
+ footer div ul.sns li:not(:first-child) a{
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/sns234.png);
+  background-size: 300% 200%;
+ }
+ footer div ul.sns li:nth-child(3) a{
+  background-position-x:-100%;  
+ }
+ footer div ul.sns li:nth-child(4) a{
+  background-position-x:-200%;  
+ }
+ footer div address {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #8b95a1;
+ }
