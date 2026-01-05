@@ -1,4 +1,4 @@
-# 🎨 ALTools Practice Project  
+# 🎨 ALTools 
 ### 🧩 UI/UX Design & Frontend Implementation (Personal Practice Project)
 
 A front‑end practice project focused on exploring UI layout, animations, and interactive components.  
