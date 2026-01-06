@@ -1,5 +1,5 @@
 # 🎨 ALTools 
-### 🧩 UI/UX Design & Frontend Implementation (Personal Practice Project)
+### 🧩 UI/UX Design & Frontend Implementation 
 
 A front‑end practice project focused on exploring UI layout, animations, and interactive components.  
 I designed and developed the entire interface to study how motion and component behavior influence user experience.
