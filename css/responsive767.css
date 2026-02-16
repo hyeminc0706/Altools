@@ -44,7 +44,7 @@ header .dropdown-item:hover {
 		justify-items: center;
 		width: 100%;
 		height: 43vh;
-		padding-top: 11vh;
+		padding-top: 80px;
 	}
 
 	/* Title */
@@ -59,7 +59,6 @@ header .dropdown-item:hover {
 		height: 47px;
 		text-indent: 0;
 		margin-top: 23px;
-		font-size: 16px;
 	}
 	.titleAni a:hover{
 		background-color: #fff !important
