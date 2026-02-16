@@ -23,9 +23,9 @@ header .dropdown-item:hover {
 		left: calc(45vw - 40px);
 	}
 	.t1 .tbox img{width: 36% !important;left: calc(33vw - 40px);top: 292px !important;}
-	.t2 .t2box img{width: 36%;right: 32vw;top: 44vh;}
-	.t3 .tbox img{width: 38% !important;top: 40vh !important;left: calc(35vw - 40px);}
-	.t4 .tbox img{width: 38% !important;top: 40vh !important;left: calc(35.5vw - 40px);}
+	.t2 .t2box img{width: 36%;right: 32vw;top: 39vh;}
+	.t3 .tbox img{width: 38% !important;top: 35vh !important;left: calc(35vw - 40px);}
+	.t4 .tbox img{width: 38% !important;top: 36vh !important;left: calc(35.5vw - 40px);}
 
 	/* titleAni */
 	.titleAni.slick-initialized .slick-slide > div{
