@@ -517,8 +517,8 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
 /* Slide custom control buttons */
 .wnext {
   position: absolute;
-  top: 548px;
-  left: 354px;
+  top: 560px;
+  left: 113px;
   z-index: 100;
   display: flex;
   gap: 14px;
@@ -926,7 +926,7 @@ section#altools div.wrap ul.list {
 }
 .slick-initialized .slick-slide > div{
   margin-bottom: 60px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 section#altools div.wrap ul.list .slick-prev::before{
   content: '';
