@@ -518,7 +518,7 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
 .wnext {
   position: absolute;
   top: 560px;
-  left: 113px;
+  left: 9vw;
   z-index: 100;
   display: flex;
   gap: 14px;
@@ -736,7 +736,7 @@ header div.wrap2 span .login-btn:hover {
   position: absolute;
   width: 790px;
   right: -50px;
-  top: 75px;
+  top: 60px;
   border-radius: 25px;
 }
 
