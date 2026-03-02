@@ -518,12 +518,11 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
 .wnext {
     position: absolute;
     top: 560px;
-    left: 8.5vw;
+    left: calc(100vw - 56.5vw);
     z-index: 100;
     display: flex;
     gap: 14px;
     align-items: center;
-
 }
 
 /* Center align slide number */
