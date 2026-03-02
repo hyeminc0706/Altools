@@ -518,7 +518,8 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
 .wnext {
     position: absolute;
     top: 560px;
-    left: calc(100vw - 56.5vw);
+	left: 50%;
+	transform: translateX(-50%);
     z-index: 100;
     display: flex;
     gap: 14px;
