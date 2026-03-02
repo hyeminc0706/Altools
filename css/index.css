@@ -929,6 +929,7 @@ section#altools div.wrap {
 section#altools div.wrap ul.list {
   position: relative;
   display: flex;
+  padding-top: 70px;
 }
 .slick-initialized .slick-slide > div{
   margin-bottom: 60px;
