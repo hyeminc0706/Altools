@@ -167,7 +167,7 @@ header .dropdown-item:hover {
 	}
 	#title{
 		width: calc(100% - 40px);
-		height: 50vh;
+		height: 43vh;
 	}
 	
 	/* Service */
@@ -212,9 +212,10 @@ header .dropdown-item:hover {
 	section#business .wrap:hover{filter: none;}
 	/* altools */
 	section#altools div.wrap {
-		padding-top: 50px;
-		gap: 0px;
-		padding-bottom: 40px;
+		/* padding-top: 50px; */
+		/* gap: 0px; */
+		/* padding-bottom: 40px; */
+		display: none;
 	}
 	section#altools div.wrap h2{
 		font-size: 24px;
@@ -225,15 +226,10 @@ header .dropdown-item:hover {
 		padding-bottom: 35px;
 	}
 	section#altools div.wrap ul.list {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
 		width: 100vw;
-		height: 100%;
-		padding: 0;
-		margin: 0;
+		height: 100vh;
 		padding: 0px 20px 0px 20px;
-    }
+		}
 	section#altools div.wrap ul.list li.m:hover{
 		transform: translateY(0px);
 	}
@@ -269,10 +265,7 @@ header .dropdown-item:hover {
 		display: flex;
 		flex-direction: column;
 	}
-	section#tip div.wrap ul li:nth-child(1){
-		height: 360px !important;
-	}
-	section#tip div.wrap ul li:nth-child(n+2):nth-child(-n+5) {
+	section#tip div.wrap ul li:nth-child(-n+5) {
 	    height: 220px !important;
 	}
 	section#tip div.wrap ul li a{
