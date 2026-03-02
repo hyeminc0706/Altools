@@ -516,13 +516,14 @@ section#promotion .promotionAni .slick-cloned:nth-child(4) a {
 
 /* Slide custom control buttons */
 .wnext {
-  position: absolute;
-  top: 560px;
-  left: 15.5vw;
-  z-index: 100;
-  display: flex;
-  gap: 14px;
-  align-items: center;
+    position: absolute;
+    top: 560px;
+    left: 8.5vw;
+    z-index: 100;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
 }
 
 /* Center align slide number */
@@ -700,32 +701,36 @@ header div.wrap2 span .login-btn:hover {
   background-color: hsla(0,0%,100%,.85);
 }
 .t1 a::after{
- content: ">";
- left: 192px; 
- position: absolute;
- top: 24px; 
- z-index: 99;
+    content: ">";
+    left: 195px;
+    position: absolute;
+    top: 24px;
+    z-index: 99;
+
 }
 .t2 a::after{
- content: ">";
- left: 201px; 
- position: absolute;
- bottom: 24px; 
- z-index: 99;
+    content: ">";
+    left: 209px;
+    position: absolute;
+    bottom: 24px;
+    z-index: 99;
+
 }
 .t3 a::after{
- content: ">";
- left: 197px; 
- position: absolute;
- bottom: 24px; 
- z-index: 99;
+    content: ">";
+    left: 203px;
+    position: absolute;
+    bottom: 24px;
+    z-index: 99;
+
 }
 .t4 a::after{
- content: ">";
- left: 201px; 
- position: absolute;
- bottom: 24px; 
- z-index: 99;
+    content: ">";
+    left: 202px;
+    position: absolute;
+    bottom: 24px;
+    z-index: 99;
+
 }
 .tbox img{
   position: absolute;
@@ -777,11 +782,12 @@ section#product div.wrap ul li a figure img {
   height: 44px;
 }
 section#product div.wrap ul li a figure figcaption h3 {
-  margin-bottom: 5px;
-  font-size: 13.5px;
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: -.5px;
+    margin-bottom: 5px;
+    font-size: 12.5px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -.9px;
+
 }
 section#product div.wrap ul li a figure figcaption h3::after {
   content:"";
