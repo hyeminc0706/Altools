@@ -20,7 +20,7 @@ header .dropdown-item:hover {
 	}
 	.wnext{
 		top: 563px;
-		left: calc(45vw - 40px);
+		transform: translateX(-50%);
 	}
 	.t1 .tbox img{width: 36% !important;left: calc(33vw - 40px);top: 285px !important;}
 	.t2 .t2box img{width: 36%;right: 32vw;top: 320px;}
