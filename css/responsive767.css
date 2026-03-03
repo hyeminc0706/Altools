@@ -37,7 +37,7 @@ header .dropdown-item:hover {
 	}
 	.wnext{
 		top: 36vh;
-		left: calc((100vw - 217px) / 2);
+		transform: translateX(-50%);
 	}
 	.slick-initialized .slick-slide > div{
 		margin-bottom: 5px;
