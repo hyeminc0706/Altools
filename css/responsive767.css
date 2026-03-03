@@ -197,7 +197,7 @@ header .dropdown-item:hover {
 	}
 	section#business .wrap{
 		height: 400px;
-		gap: 20px;
+		margin-bottom: 45px;
 	}
 	section#business div p{
 		font-size: 24px;
